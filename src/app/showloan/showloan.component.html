@@ -1,0 +1,11 @@
+<p>showloan works!</p>
+<table class="table table-bordered">
+    <tr><td>Loan ID </td><td> Loan Amount </td><td> Loan Tenure</td><td> Rate of Interest </td></tr>
+
+    <tr *ngFor="let loa of loanList">
+        <td>{{ loa.loanid }}</td>
+        <td>{{ loa.loanamount }}</td>
+        <td>{{ loa.loantenure }}</td>
+        <td>{{ loa.rateofinterest }}</td>
+    </tr>
+</table>
