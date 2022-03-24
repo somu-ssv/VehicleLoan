@@ -1,0 +1,27 @@
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card text-white bg-success mb-3" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase mb-5">Calculate Eligibility</h2>
+
+<div >
+
+    <div >	
+
+
+        <form>
+            <div class="form-outline form- mb-4">
+                <label class="form-label">Monthly Income</label>
+                <input type="number" placeholder="Monthly Income"id="typeEmailX" class="form-control form-control-lg"  (keyup)="handleMonthlyIncomeEvent($event)"/>
+                
+            </div>
+
+                <button class="btn btn-outline- alert-warning px-5 me-5" (click)="cal()" type="submit">Calculate</button>
+            
+                <h3 *ngIf="flag"> You may be able to avail Vehicle loan up to ₹{{eligibility}}  </h3>
+        </form>
+     </div>
